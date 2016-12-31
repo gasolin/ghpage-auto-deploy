@@ -25,13 +25,13 @@ https://travis-ci.org/profile/[user name]
 
 If you haven't use Travis, don't worry about it, you can just use github account to login Travis.
 
-![](http://i.imgur.com/Q1hDoPL.png)
+![](http://i.imgur.com/Q1hDoPLm.png)
 
 5. Tap the gear icon near the project name or visit https://travis-ci.org/[user name]/[project name]/settings
 
 Add a environment variable `GH_TOKEN` with the key you got from github `Generate Token` function.
 
-![](http://i.imgur.com/GhMHQO6.png)
+![](http://i.imgur.com/GhMHQO6m.png)
 
 In general settings section, switch off `Build pushes` and `Build pull requests` options because the auto deploy process will `push` commit to your branch.
 You can swith on them only when you know what you are doing.
