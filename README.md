@@ -33,9 +33,12 @@ Add a environment variable `GH_TOKEN` with the key you got from github `Generate
 
 ![](http://i.imgur.com/GhMHQO6.png)
 
+In general settings section, switch off `Build pushes` and `Build pull requests` options because the auto deploy process will `push` commit to your branch.
+You can swith on them only when you know what you are doing.
+
 ### Configure .travis.yml
 
-Check .travis.yml and replace git related settings to fit your info.
+Check .travis.yml in the forked project and replace git related settings to fit your info.
 
 
 All set! Commit anything in your project and the project will be auto deployed to gh-pages!
