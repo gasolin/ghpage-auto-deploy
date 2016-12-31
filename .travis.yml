@@ -15,7 +15,7 @@ before_install:
 # the folder that will be upload to gh-page
   - export FOLDER_TO_UPLOAD=build
 # target export branch
-  - export BRANCH=gh-page
+  - export BRANCH=gh-pages
 # check /usr/share/zoneinfo/ for valid timezone
 # used in auto commit message
   - export TIMEZONE=Asia/Taipei
