@@ -1,0 +1,40 @@
+language: node_js
+node_js:
+  - "6"
+
+before_install:
+# DONT SETUP GH_TOKEN here, set it in Travis to avoid the security issue
+# git setup
+  - git config --global push.default matching
+  - git config --global user.name "gasolin via Travis CI"
+  - git config --global user.email "gasolin@gmail.com"
+# github user name
+  - export ACCOUNT=gasolin
+# github project name
+  - export REPO=ghpage-auto-deploy
+# the folder that will be upload to gh-page
+  - export FOLDER_TO_UPLOAD=build
+# target export branch
+  - export BRANCH=gh-page
+# check /usr/share/zoneinfo/ for valid timezone
+# used in auto commit message
+  - export TIMEZONE=Asia/Taipei
+
+install:
+  - npm install
+
+script:
+# your build process
+  - mkdir build
+# deploy via travis
+# check details on https://github.com/gasolin/ghpage-auto-deploy
+  - ./deploy.sh
+
+branches:
+  only:
+# the source branch
+    - master
+
+cache:
+  directories:
+    - node_modules
