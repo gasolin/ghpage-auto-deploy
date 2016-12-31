@@ -25,7 +25,7 @@ https://travis-ci.org/profile/[user name]
 
 If you haven't use Travis, don't worry about it, you can just use github account to login Travis.
 
-![](http://i.imgur.com/Q1hDoPL.png)
+![](http://i.imgur.com/Q1hDoPLt.png)
 
 5. Tap the gear icon near the project name or visit https://travis-ci.org/[user name]/[project name]/settings
 
