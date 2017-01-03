@@ -28,7 +28,7 @@ Add a environment variable `GH_TOKEN` with the key you got from github `Generate
 
 ### Configure .travis.yml
 
-Check .travis.yml in the forked project and replace git related settings to fit your info.
+Check [.travis.yml](https://github.com/gasolin/ghpage-auto-deploy/blob/master/.travis.yml) in the forked project and replace git related settings to fit your info.
 
 
 All set! Commit anything in your project and the project will be auto deployed to gh-pages!
