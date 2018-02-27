@@ -1,8 +1,10 @@
 language: node_js
 node_js:
-  - "6"
+  - "8"
 
 before_install:
+# grant the needed permission for deploy.sh
+  - chmod +x deploy.sh
 # DONT SETUP GH_TOKEN here, set it in Travis to avoid the security issue
 # git setup
   - git config --global push.default matching
@@ -25,9 +27,7 @@ install:
 
 script:
 # your build process
-  - rm -Rf build
-  - mkdir build
-  - cp index.html build/
+  - CI=false npm run build
 # deploy via travis
 # check details on https://github.com/gasolin/ghpage-auto-deploy
   - ./deploy.sh
