@@ -27,7 +27,9 @@ install:
 
 script:
 # your build process
-  - CI=false npm run build
+  - rm -Rf build
+  - mkdir build
+  - cp index.html build/
 # deploy via travis
 # check details on https://github.com/gasolin/ghpage-auto-deploy
   - ./deploy.sh
